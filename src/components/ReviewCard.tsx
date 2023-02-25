@@ -6,7 +6,7 @@ type ReviewCardProps = {
 };
 const ReviewCard = ({ imageSrc, name, verified, review }: ReviewCardProps) => {
   return (
-    <div className="h-[248px] w-[327px] lg:h-[234px] lg:w-[354px] bg-[#511F50] px-[32px] py-[40px] rounded-[8px] hover:scale-105 shadow-2xl">
+    <div className="h-[248px] w-[327px] lg:h-[234px] lg:w-[354px] bg-[#511F50] px-[32px] py-[40px] rounded-[8px] hover:scale-105 transition-all ease-in duration-150 cursor-pointer shadow-2xl">
       <div className="flex items-center justify-start">
         <img src={imageSrc} alt="" className="rounded-full h-[40px] object-cover" />
         <h3 className="text-[#fff] font-bold ml-6">
